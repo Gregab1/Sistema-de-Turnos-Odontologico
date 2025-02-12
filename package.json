@@ -1,0 +1,20 @@
+{
+  "name": "sistemas-de-turnos",
+  "version": "1.0.0",
+  "description": "sistema de tunos Odontologico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --ignore feedback.json app.js"
+  },
+  "author": "Gabriel Gregorio",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "uuid": "^11.0.5"
+  }
+}

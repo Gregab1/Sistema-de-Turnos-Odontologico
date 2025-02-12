@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inicio</title>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+<style>
+  .base {
+    background-color: #2471a3;
+    padding: 1px;
+  }
+
+  .cabeza {
+    background-color: #A9D0F5;
+    /*background-color: #A9D0F5;*/
+  }
+
+
+
+  h1 {
+    margin: #000000;
+
+    color: #2E2E2E;
+    font-family: sans-serif;
+    font-size: 200%;
+    font-style: italic;
+  }
+
+  h2 {
+
+    /* Para evitar espacios adicionales */
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 150%;
+    font-style: italic;
+  }
+
+  p {
+    font: 150% sans-serif;
+    margin: 0 auto;
+    color: #848484;
+    line-height: 28px;
+    text-align: left;
+    width: 83.3%;
+    padding: 15px 5px 40px 0;
+  }
+
+  .Regis {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    /* Color del botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .Regis:hover {
+    background-color: #0056b3;
+    /* Color al pasar el mouse */
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .image img {
+    width: 500px;
+    /* Fijar un ancho uniforme para ambas imágenes */
+    height: 400px;
+    /* Fijar una altura uniforme */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarse */
+    border-radius: 20px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra alrededor de las imágenes */
+    transition: transform 0.3s ease;
+    /* Transición suave para el hover */
+  }
+
+  .icon-size {
+    font-size: 4rem;
+    color: #f6f2f6;
+  }
+
+  .image img:hover {
+    transform: scale(1.05);
+
+  }
+
+  .iconos {
+
+    padding: 20px;
+  }
+
+  .pad {
+    padding: 10px;
+  }
+
+  .p1 {
+    text-align: center;
+    color: black;
+
+
+  }
+
+  .p2 {
+    font-size: 14px;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  .porta {
+    width: 100%;
+
+    max-height: 700px;
+
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+    display: block;
+    object-fit: cover;
+    /* Ajusta la imagen para mantener la proporción */
+  }
+
+  .fab {
+    color: #000000;
+  }
+
+  .nav {
+
+    display: flex;
+    /* Usa Flexbox */
+    justify-content: flex-end;
+    /* Alinea los elementos al final (derecha) */
+    align-items: center;
+   
+    gap: 20px;
+    /* Espacio entre los elementos */
+    padding: 10px;
+    
+    margin-right: 2rem;
+    
+  }
+
+  /* Estilos generales para los botones */
+  .btn {
+    background: none;
+   
+    border: none;
+    
+    padding: 0;
+    
+    margin: 0;
+
+    font-family: inherit;
+
+    font-size: 20px;
+   
+    color: #4c4848;
+    
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    outline: none;
+    /* Elimina el contorno al hacer clic */
+    text-decoration: underline;
+    /* Añade subrayado */
+  }
+
+  
+  .btn:hover {
+    color: #540892;
+    /* Cambia el color del texto */
+    font-size: 21px;
+   
+    transition: color 0.3s, font-size 0.3s;
+    /* Transición suave */
+    border: none;
+   
+    outline: none;
+  
+    background: none;
+   
+  }
+  .datos{
+    padding-top: 3px;
+  }
+  .info{
+    margin-left: 1rem;
+  }
+</style>
+
+<body>
+
+  <div class="cabeza">
+    <div class="nav">
+      <div class="header">
+
+        <div>
+
+          <input type="button" onclick="turno()" class="btn " name="cu" value="Solicitar Turno">
+
+        </div>
+
+      </div>
+      <div class="header">
+
+
+        <div>
+
+          <input type="button" onclick="login()" class="btn " name="cu" value="Consulta Turno">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="datos">
+      <div class="info">
+        <h1>Dra. Maria Soledad Carrizo</h1>
+      </div>
+      <div class="info">
+        <h2>Tel:2626015353</h2>
+      </div>
+      <div class="iconos">
+        <a href="https://www.instagram.com/od.soledad_carrizo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank">
+          <i class="fab fa-instagram icon-size"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5492613411019&text&type=phone_number&app_absent=0"
+          target="_blank">
+          <i class="fab fa-whatsapp icon-size pad"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="full">
+    <img class="porta"
+      src="https://img.freepik.com/fotos-premium/paciente-que-tiene-tratamiento-dental-herramienta-boca-paciente-odontologia-sonrisa-mejorada_326694-270044.jpg">
+  </div>
+
+  <p class="text-primary-emphasis">"¡No dejes que los problemas dentales afecten tu calidad de vida! Un chequeo a tiempo
+    puede
+    prevenir
+    complicaciones mayores. Reserva tu turno hoy y dale a tu sonrisa el cuidado que se merece.</p>
+
+  <div class="image-container">
+    <div class="image">
+      <img
+        src="https://media.gettyimages.com/id/1316535722/es/v%C3%ADdeo/im%C3%A1genes-de-v%C3%ADdeo-de-4k-de-una-joven-admirando-sus-dientes-despu%C3%A9s-de-hacerse-un.jpg?s=640x640&k=20&c=Tobg8dZt1Z6GtvJ2AjBMMaIQ3LAfDv9CDG2GluTn37Q="
+        alt="Imagen 1">
+    </div>
+    <div class="image">
+      <img
+        src="https://img.freepik.com/fotos-premium/mujer-lleva-guantes-cepillo-dientes-sonrisa-que-dice-sonrisa_782516-45301.jpg"
+        alt="Imagen 2">
+    </div>
+  </div>
+  <div class="image-container">
+    <div class="image">
+      <img
+        src="https://img.freepik.com/foto-gratis/hermosa-chica-sentada-oficina-dentista_1157-21014.jpg?t=st=1731721489~exp=1731725089~hmac=153c310a498d7612be8549b91d04c4be6a15158fdb0b31d1f11bfd36e69c1eff&w=996"
+        alt="Imagen 1">
+    </div>
+    <div class="image">
+      <img
+        src="https://img.freepik.com/foto-gratis/hermosa-chica-sentada-oficina-dentista_1157-21021.jpg?t=st=1731721709~exp=1731725309~hmac=baaae477bf9e96c6d7ba82fcc009af43ed8dc6fed80d08b0971aea1961aac1a4&w=996"
+        alt="Imagen 2">
+    </div>
+  </div>
+  <div class="base">
+    <p class="p1">Dirección: Pedro Molina 351, Piso 4, Oficina 3 <br>
+      Argentina, Mendoza,<br>
+      Teléfono: +54 9 2613 41-1019</p>
+
+    <p class="p1 p2">
+      Página creada por <strong>Jose Gabriel Gregorio</strong>. Todos los derechos reservados © 2024.
+      Correo:gabriel95jk@gmail.com
+    </p>
+
+  </div>
+  <script>
+    function turno() {
+      window.location.href = "/Turno";
+
+    }
+    function login() {
+      window.location.href = "/login";
+    }
+  </script>
+</body>
+
+</html>
