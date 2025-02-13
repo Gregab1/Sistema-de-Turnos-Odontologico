@@ -44,7 +44,7 @@
 
     .titulo {
       text-align: center;
-      color: grey;
+      color:rgb(33, 25, 80);
     }
 
     .form-control,
@@ -77,6 +77,7 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
       margin-bottom: 20px;
+      
     }
 
     .input-container input {
@@ -116,6 +117,20 @@
       bottom: 2px;
       border-radius: 8px;
     }
+    .btn:hover {
+    color: #540892;
+    /* Cambia el color del texto */
+    font-size: 21px;
+   
+    transition: color 0.3s, font-size 0.3s;
+    /* Transición suave */
+    border: none;
+   
+    outline: none;
+  
+    background: none;
+   
+  }
 
     .input-container input:placeholder-shown~.invite-btn {
       pointer-events: none;
@@ -159,6 +174,8 @@
     }
     .cabeza{
       background-color:#E0ECF8;
+      
+      
     }
     .info{
       margin-top:1rem;
@@ -179,24 +196,51 @@
         padding: 8px;
         font-size: 14px;
     }
+    .btn {
+    background: none;
+   
+    border: none;
+    
+    padding: 0;
+    
+    margin: 0;
+
+    font-family: inherit;
+
+    font-size: 20px;
+   
+    color: #4c4848;
+    
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    outline: none;
+    /* Elimina el contorno al hacer clic */
+    text-decoration: none;
+    /* Añade subrayado */
+  }
+  .opciones{
+    margin-left:2rem;
+  }
+  .container{
+    padding-top:7rem;
+  }
   </style>
 </head>
 
 <body>
 
   <div class=" cabeza">
+  <div class="opciones">
     <div class="btnD">
-      <a href="/administrador/solicitud"><button class="btn btn-outline-success" > Solicitudes</button></a>
+      <a href="/administrador/solicitud"><button class="btn " > Solicitudes</button></a>
     </div> 
     <div class="btnD">
-      <a href="/administrador/agendado"><button class="btn btn-outline-success">Agendados</button></a>
+      <a href="/administrador/agendado"><button class="btn">Agendados</button></a>
     </div> 
     <div class="btnD">
-      <a href="/administrador/atendido"><button class="btn btn-outline-success">Atendidios</button></a>
+      <a href="/administrador/atendido"><button class="btn ">Atendidios/Cancelados</button></a>
     </div> 
-    <div class="btnD">
-      <a href="/administrador/cancelado"><button class="btn btn-outline-success">Cancelados</button></a>
-    </div> 
+    </div>
   </div>
 
 
